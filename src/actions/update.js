@@ -1,4 +1,6 @@
-/* FIXME:
+import { getState, setState } from "../store";
+
+/* FIXED:
 *
 * export a function that updates a single element from the store.
 *
@@ -8,6 +10,10 @@
 *
 */
 
-const update = () => {};
+const update = (url, i) => {
+    const updateArray = getState();
+    updateArray[i] = url;
+    setState(updateArray);
+};
 
 export default update;

@@ -28,6 +28,10 @@
       <div class="caption" style="text-align: center;">
         <button class="btn btn-danger picture-item-delete-button">delete</button>
       </div>
+
+      <div class="caption" style="text-align: center;">
+        <button class="btn btn-danger picture-item-update-button">Update</button>
+      </div>
     </div>
   </template>
 
@@ -39,6 +43,11 @@
         </div>
 
         <ul class="nav navbar-nav navbar-right">
+            <li>
+                <div class="navbar-form">
+                  <input id="picture-url-input-update" type="text" size="40" class="form-control" placeholder="Insert a picture URL to update" />
+                </div>
+              </li>
           <li>
             <div class="navbar-form">
               <input id="picture-url-input" type="text" size="40" class="form-control" placeholder="Insert a picture URL" />

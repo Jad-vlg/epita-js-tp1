@@ -1,4 +1,6 @@
-/* FIXME:
+import { getState, setState } from "../store";
+
+/* FIXED:
 *
 * export a function that adds a new element to the store.
 *
@@ -9,6 +11,9 @@
 *
 */
 
-const add = () => {};
+const add = (i) => {
+    const newArray = [...getState(), i];
+    setState(newArray);
+};
 
 export default add;

@@ -1,4 +1,6 @@
-/* FIXME:
+import { getState } from "../store";
+
+/* FIXED:
 *
 * export a function that returns all the current elements from the store.
 *
@@ -7,6 +9,8 @@
 *
 */
 
-const list = () => {};
+const list = () => {
+    return getState();
+}
 
 export default list;
